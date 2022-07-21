@@ -1,0 +1,229 @@
+{
+    "meta": {
+        "description": "ANKARA",
+        "serial": "5da5b4296c44967312e3245e2bd7af216db88b",
+        "datetime": "21/07/2022 11:57:01"
+    },
+    "system": {
+        "hostname": "deneme",
+        "domain": "sobe.local",
+        "dns": [
+            {
+                "ip/fqdn": "8.8.8.8"
+            },
+            {
+                "ip/fqdn": "0.0.0.0"
+            }
+        ],
+        "ntp": [
+            {
+                "ip/fqdn": "9.9.9.9"
+            },
+            {
+                "ip/fqdn": "0.0.0.0"
+            }
+        ],
+        "timezone": "Turkey",
+        "keymap": "tr",
+        "language": "en_US",
+        "password": "gAAAAABi1vIHa0JtEIA4Q_eW_81TwhHYmgCpgv15exGto1OqQvATqBQUVAqEj_-_MWsN1bwvdokcaT6cDQz0yakkDACJ2wygOQ=="
+    },
+    "network": {
+        "interface": [
+            {
+                "id": "61000000002",
+                "name": "en0",
+                "alias": "en0",
+                "type": "physical",
+                "role": "lan",
+                "ip mode": "static",
+                "ip/mask": "4.4.4.5/255.255.255.0",
+                "vlan-id": 1,
+                "vlan-interface": "",
+                "mac": "3c:22:fb:ee:fc:3c",
+                "mtu": 1500,
+                "access": true,
+                "status": true,
+                "comment": "test"
+            },
+            {
+                "id": "61000000009",
+                "name": "en0.12",
+                "alias": "vlan100",
+                "type": "vlan",
+                "role": "lan",
+                "ip mode": "static",
+                "ip/mask": "100.100.100.1/255.255.255.0",
+                "vlan-id": 12,
+                "vlan-interface": "en0",
+                "mac": "3c:22:fb:ee:fc:3c",
+                "mtu": 1500,
+                "access": true,
+                "status": true,
+                "comment": ""
+            },
+            {
+                "id": "61000000003",
+                "name": "en1",
+                "alias": "en1",
+                "type": "physical",
+                "role": "lan",
+                "ip mode": "static",
+                "ip/mask": "5.5.5.5/255.255.255.0",
+                "vlan-id": 1,
+                "vlan-interface": "",
+                "mac": "82:87:71:a4:28:01",
+                "mtu": 1500,
+                "access": true,
+                "status": false,
+                "comment": ""
+            },
+            {
+                "id": "61000000004",
+                "name": "en2",
+                "alias": "en2",
+                "type": "physical",
+                "role": "lan",
+                "ip mode": "dhcp",
+                "ip/mask": "0.0.0.0/0.0.0.0",
+                "vlan-id": 1,
+                "vlan-interface": "",
+                "mac": "82:87:71:a4:28:00",
+                "mtu": 1500,
+                "access": true,
+                "status": false,
+                "comment": ""
+            },
+            {
+                "id": "61000000005",
+                "name": "en3",
+                "alias": "en3",
+                "type": "physical",
+                "role": "lan",
+                "ip mode": "static",
+                "ip/mask": "0.0.0.0/0.0.0.0",
+                "vlan-id": 1,
+                "vlan-interface": "",
+                "mac": "82:87:71:a4:28:05",
+                "mtu": 1500,
+                "access": true,
+                "status": false,
+                "comment": ""
+            },
+            {
+                "id": "61000000006",
+                "name": "en4",
+                "alias": "en4",
+                "type": "physical",
+                "role": "lan",
+                "ip mode": "static",
+                "ip/mask": "0.0.0.0/0.0.0.0",
+                "vlan-id": 1,
+                "vlan-interface": "",
+                "mac": "82:87:71:a4:28:04",
+                "mtu": 1500,
+                "access": true,
+                "status": false,
+                "comment": ""
+            },
+            {
+                "id": "61000000007",
+                "name": "en5",
+                "alias": "TEST",
+                "type": "physical",
+                "role": "wan",
+                "ip mode": "static",
+                "ip/mask": "9.9.9.9/255.255.255.0",
+                "vlan-id": 1,
+                "vlan-interface": "",
+                "mac": "ac:de:48:00:11:22",
+                "mtu": 1500,
+                "access": false,
+                "status": false,
+                "comment": ""
+            },
+            {
+                "id": "61000000008",
+                "name": "en7",
+                "alias": "en7",
+                "type": "physical",
+                "role": "lan",
+                "ip mode": "static",
+                "ip/mask": "0.0.0.0/0.0.0.0",
+                "vlan-id": 1,
+                "vlan-interface": "",
+                "mac": "a0:ce:c8:c8:c2:07",
+                "mtu": 1500,
+                "access": true,
+                "status": false,
+                "comment": ""
+            }
+        ],
+        "wifi": [],
+        "lte": [],
+        "router": {
+            "static": [
+                {
+                    "id": "62000000001",
+                    "interface": "en0",
+                    "network": "10.100.100.0/255.255.255.0",
+                    "gateway": "4.4.4.100",
+                    "status": true,
+                    "comment": "localnet"
+                },
+                {
+                    "id": "62000000002",
+                    "interface": "en0",
+                    "network": "0.0.0.0/0.0.0.0",
+                    "gateway": "4.4.4.1",
+                    "status": true,
+                    "comment": "Default Router"
+                }
+            ],
+            "policy": [],
+            "dynamic": [],
+            "blackhole": [
+                {
+                    "id": "64000000001",
+                    "network": "111.111.111.111/255.255.255.255",
+                    "direction": "from",
+                    "status": true,
+                    "comment": ""
+                }
+            ]
+        }
+    },
+    "vpn": {
+        "team": [
+            {
+                "id": "72000000001",
+                "name": "deneme",
+                "interface": "team100",
+                "runner": "lacp",
+                "selector": "vlan",
+                "watcher": "ethtool",
+                "status": true,
+                "comment": "deneme"
+            }
+        ],
+        "tunnel": [
+            {
+                "id": "71000000001",
+                "name": "deneme",
+                "mode": "master",
+                "interface": "gate100",
+                "bind": "en0",
+                "team": "team100",
+                "protocol": "udp",
+                "port": 1111,
+                "core-primary": null,
+                "core-secondary": null,
+                "cipher": true,
+                "duplicate-cn": true,
+                "logging": true,
+                "status": true,
+                "comment": ""
+            }
+        ]
+    }
+}
