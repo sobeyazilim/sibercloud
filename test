@@ -1,393 +1,140 @@
-{
-    "meta": {
-        "description": "ANKARA ODTU",
-        "serial": "5da5b4296c44967312e3245e2bd7af216db88b",
-        "datetime": "22/07/2022 16:52:08"
-    },
-    "system": {
-        "hostname": "gate1",
-        "domain": "sobe.local",
-        "dns": [
-            {
-                "ip/fqdn": "8.8.8.8"
-            },
-            {
-                "ip/fqdn": "1.1.1.1"
-            }
-        ],
-        "ntp": [
-            {
-                "ip/fqdn": "9.9.9.9"
-            },
-            {
-                "ip/fqdn": "0.0.0.0"
-            }
-        ],
-        "timezone": "Turkey",
-        "keymap": "tr",
-        "language": "en_US",
-        "password": "gAAAAABi2UA7BvPdB-T1lwwAYpp_XkL5qAddpKefgv4FxcxrAzCgU7ZiaMM2ja4WAs0KfNECiz7Fmsy7xoQNQVSWsC4cz6HhYw=="
-    },
-    "network": {
-        "interface": [
-            {
-                "id": "61000000010",
-                "name": "bond1",
-                "alias": "lacp1",
-                "type": "lacp",
-                "role": "lan",
-                "ip mode": "static",
-                "ip/mask": "2.2.2.2/255.255.255.0",
-                "vlan-id": 1,
-                "vlan-interface": "",
-                "member": "en0,en1",
-                "mac": "aa:96:f9:30:ef:8b",
-                "mtu": 1500,
-                "access": true,
-                "lock": false,
-                "status": true,
-                "comment": ""
-            },
-            {
-                "id": "61000000001",
-                "name": "en0",
-                "alias": "MGMT",
-                "type": "physical",
-                "role": "wan",
-                "ip mode": "static",
-                "ip/mask": "1.1.1.1/255.255.255.0",
-                "vlan-id": 1,
-                "vlan-interface": "",
-                "member": "",
-                "mac": "3c:22:fb:ee:fc:3c",
-                "mtu": 1500,
-                "access": true,
-                "lock": true,
-                "status": true,
-                "comment": "Management Interface"
-            },
-            {
-                "id": "61000000004",
-                "name": "en1",
-                "alias": "en1",
-                "type": "physical",
-                "role": "lan",
-                "ip mode": "static",
-                "ip/mask": "0.0.0.0/0.0.0.0",
-                "vlan-id": 1,
-                "vlan-interface": "",
-                "member": "",
-                "mac": "82:87:71:a4:28:01",
-                "mtu": 1500,
-                "access": true,
-                "lock": true,
-                "status": true,
-                "comment": ""
-            },
-            {
-                "id": "61000000007",
-                "name": "en10",
-                "alias": "en10",
-                "type": "physical",
-                "role": "lan",
-                "ip mode": "static",
-                "ip/mask": "0.0.0.0/0.0.0.0",
-                "vlan-id": 1,
-                "vlan-interface": "",
-                "member": "",
-                "mac": "56:a7:87:25:94:5e",
-                "mtu": 1500,
-                "access": true,
-                "lock": false,
-                "status": false,
-                "comment": ""
-            },
-            {
-                "id": "61000000008",
-                "name": "en11",
-                "alias": "en11",
-                "type": "physical",
-                "role": "lan",
-                "ip mode": "static",
-                "ip/mask": "0.0.0.0/0.0.0.0",
-                "vlan-id": 1,
-                "vlan-interface": "",
-                "member": "",
-                "mac": "be:cf:32:7a:8b:49",
-                "mtu": 1500,
-                "access": true,
-                "lock": false,
-                "status": false,
-                "comment": ""
-            },
-            {
-                "id": "61000000005",
-                "name": "en2",
-                "alias": "en2",
-                "type": "physical",
-                "role": "lan",
-                "ip mode": "static",
-                "ip/mask": "0.0.0.0/0.0.0.0",
-                "vlan-id": 1,
-                "vlan-interface": "",
-                "member": "",
-                "mac": "82:87:71:a4:28:00",
-                "mtu": 1500,
-                "access": true,
-                "lock": false,
-                "status": false,
-                "comment": ""
-            },
-            {
-                "id": "61000000002",
-                "name": "en3",
-                "alias": "en3",
-                "type": "physical",
-                "role": "lan",
-                "ip mode": "static",
-                "ip/mask": "0.0.0.0/0.0.0.0",
-                "vlan-id": 1,
-                "vlan-interface": "",
-                "member": "",
-                "mac": "82:87:71:a4:28:05",
-                "mtu": 1500,
-                "access": true,
-                "lock": false,
-                "status": false,
-                "comment": ""
-            },
-            {
-                "id": "61000000003",
-                "name": "en4",
-                "alias": "en4",
-                "type": "physical",
-                "role": "lan",
-                "ip mode": "static",
-                "ip/mask": "0.0.0.0/0.0.0.0",
-                "vlan-id": 1,
-                "vlan-interface": "",
-                "member": "",
-                "mac": "82:87:71:a4:28:04",
-                "mtu": 1500,
-                "access": true,
-                "lock": false,
-                "status": false,
-                "comment": ""
-            },
-            {
-                "id": "61000000009",
-                "name": "en5",
-                "alias": "en5",
-                "type": "physical",
-                "role": "lan",
-                "ip mode": "static",
-                "ip/mask": "0.0.0.0/0.0.0.0",
-                "vlan-id": 1,
-                "vlan-interface": "",
-                "member": "",
-                "mac": "ac:de:48:00:11:22",
-                "mtu": 1500,
-                "access": true,
-                "lock": false,
-                "status": false,
-                "comment": ""
-            },
-            {
-                "id": "61000000006",
-                "name": "en8",
-                "alias": "en8",
-                "type": "physical",
-                "role": "lan",
-                "ip mode": "static",
-                "ip/mask": "0.0.0.0/0.0.0.0",
-                "vlan-id": 1,
-                "vlan-interface": "",
-                "member": "",
-                "mac": "da:f3:3a:db:98:2f",
-                "mtu": 1500,
-                "access": true,
-                "lock": false,
-                "status": false,
-                "comment": ""
-            }
-        ],
-        "wifi": [],
-        "lte": [],
-        "router": {
-            "static": [
-                {
-                    "id": "62000000001",
-                    "interface": "bond1",
-                    "network": "0.0.0.0/0.0.0.0",
-                    "gateway": "1.1.1.2",
-                    "status": true,
-                    "comment": "Default Router"
-                },
-                {
-                    "id": "62000000002",
-                    "interface": "bond1",
-                    "network": "100.100.100.0/255.255.255.0",
-                    "gateway": "1.1.1.2",
-                    "status": true,
-                    "comment": ""
-                }
-            ],
-            "policy": [],
-            "dynamic": [],
-            "blackhole": [
-                {
-                    "id": "64000000001",
-                    "network": "111.111.111.111/255.255.255.255",
-                    "direction": "from",
-                    "status": true,
-                    "comment": ""
-                }
-            ]
-        }
-    },
-    "vpn": {
-        "team": [
-            {
-                "id": "72000000001",
-                "name": "deneme",
-                "interface": "team100",
-                "runner": "lacp",
-                "selector": "vlan",
-                "watcher": "ethtool",
-                "status": true,
-                "comment": "deneme"
-            }
-        ],
-        "tunnel": [
-            {
-                "id": "71000000001",
-                "name": "deneme",
-                "mode": "master",
-                "interface": "gate100",
-                "local": "0.0.0.0",
-                "bind": "en0",
-                "team": "team100",
-                "protocol": "udp",
-                "port": 1111,
-                "core-primary": null,
-                "core-secondary": null,
-                "ca": "",
-                "cert": "",
-                "key": "",
-                "cipher": true,
-                "duplicate-cn": true,
-                "logging": true,
-                "status": true,
-                "comment": ""
-            },
-            {
-                "id": "71000000002",
-                "name": "deneme1",
-                "mode": "master",
-                "interface": "gate102",
-                "local": "0.0.0.0",
-                "bind": "en5",
-                "team": "",
-                "protocol": "tcp",
-                "port": 1111,
-                "core-primary": null,
-                "core-secondary": null,
-                "ca": "",
-                "cert": "",
-                "key": "",
-                "cipher": true,
-                "duplicate-cn": true,
-                "logging": true,
-                "status": true,
-                "comment": ""
-            },
-            {
-                "id": "71000000003",
-                "name": "deneme3",
-                "mode": "master",
-                "interface": "gate104",
-                "local": "0.0.0.0",
-                "bind": "en10",
-                "team": "",
-                "protocol": "udp",
-                "port": 1212,
-                "core-primary": null,
-                "core-secondary": null,
-                "ca": "",
-                "cert": "",
-                "key": "",
-                "cipher": true,
-                "duplicate-cn": true,
-                "logging": true,
-                "status": true,
-                "comment": ""
-            },
-            {
-                "id": "71000000004",
-                "name": "deneme5",
-                "mode": "master",
-                "interface": "gate105",
-                "local": "0.0.0.0",
-                "bind": "en1",
-                "team": "",
-                "protocol": "udp",
-                "port": 4444,
-                "core-primary": null,
-                "core-secondary": null,
-                "ca": "-----BEGIN CERTIFICATE-----\nMIIDVzCCAj+gAwIBAgIUP8SGaAtjRNrfL+1rz1Mukp68AlcwDQYJKoZIhvcNAQEL\nBQAwGjEYMBYGA1UEAwwPR0FURVNVUCBST09UIENBMB4XDTIxMTExODE1NDEwN1oX\nDTMxMTExNjE1NDEwN1owGjEYMBYGA1UEAwwPR0FURVNVUCBST09UIENBMIIBIjAN\nBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvgxP1Kp6AwABSk8NuAPB6GkJ3SHB\nLsCFjL59TA440HmOA9/7THyR4Hd6BQRgU9QP1i1azNmlAZwk4VGVNYucTl51ayPJ\nDTusNli7QugdvnUMZnliHqGxDUx7APTec6p2HaH9uDQAqOljgYhvd/KAwDbEJaL2\nSXArKUFdkUiHyXSLHSLvH2u00DNjQyOM3TOeqkvvUC1fGUwbv8JJSwwddte/NSf1\nSvQH1bvi41Oo8Ec1SzWqQwxjPcNXvcq2Zpw15vmHM8dd0s7OxQOFOHqX/ozvzXeQ\neEAZC691EZsRvk4GDYvskRs+69tJHsvMHSzpXPWcJ6oE7IHUg6PT2Oli3wIDAQAB\no4GUMIGRMB0GA1UdDgQWBBRPgtCr7UQ+t4cAyD0C/v4P9WuWOzBVBgNVHSMETjBM\ngBRPgtCr7UQ+t4cAyD0C/v4P9WuWO6EepBwwGjEYMBYGA1UEAwwPR0FURVNVUCBS\nT09UIENBghQ/xIZoC2NE2t8v7WvPUy6SnrwCVzAMBgNVHRMEBTADAQH/MAsGA1Ud\nDwQEAwIBBjANBgkqhkiG9w0BAQsFAAOCAQEAIKGz32pbpDx/E4GJ6dy9sjyEHHqS\nErSboZv1TpwtDCF/fCAUZbseYtL5Uk1Bpsdlp2VNYOYhNPH11k2USaW/RmSC8BsT\nyaido4+AsqBod+YakIeLMM014wu5mwoYXbCpvIz8cwm3DCUJ0GrvZZvjU/IDLpvN\nLHE8aNbKuon1nwYaCRLR83zRsmvXpU3Xo6szcQ3Xf4ZTzO/QOcMKtQldOihkXPgW\n+Wyc4CC4El6ZszpgtS6s/NFwqHHxuyY9+wABrdgTPJ/bi5k4VjaYW0+UA6OBZAnN\nU72io64sp2tWd9Xb0E8bHtH+REMY1Y6iyCi8ImoagE7ZgmioQs1GSdjjeA==\n-----END CERTIFICATE-----\n",
-                "cert": "-----BEGIN CERTIFICATE-----\nMIIDcDCCAligAwIBAgIRAIbE0ClmhJx3/IlPu/1OrC8wDQYJKoZIhvcNAQELBQAw\nGjEYMBYGA1UEAwwPR0FURVNVUCBST09UIENBMB4XDTIxMTExODE1NDE1NVoXDTMx\nMTExNjE1NDE1NVowETEPMA0GA1UEAwwGbWFzdGVyMIIBIjANBgkqhkiG9w0BAQEF\nAAOCAQ8AMIIBCgKCAQEA7F9tyyzcAW658XrRkl5UrYIxS+1saSo10qPmxbb2BNSd\nc4sJ9GrdbvGp+ZERz+3eTM8UWR8JBRpAcaRkocMfszDGej5KufzpBc/MvXzsN54y\nGObqxNF/st72y8TLoQ6SHHMFm/5GrODDSOYMlSY1Zq+EyTpEz7CdJwvijRIKIZYK\n5c/jkuBH3ViTAcrWDIFPKOg02rDL5HEAtQJjN2osJvqZ1DCnL30EFQTr5Wvj3BDW\nu0QIyRUVPkwhxOyoWpKtnWMHKdneFMYKRSHbK7rEJ6IhXca+kc7HQkus0kFlXEi5\nGyHVzGS/6sfL9gOGXMV+o1AJQyIenfqZ/iqVCWSwxwIDAQABo4G5MIG2MAkGA1Ud\nEwQCMAAwHQYDVR0OBBYEFNhHbtgpj9BFvgJ2gSrF58fl38e0MFUGA1UdIwROMEyA\nFE+C0KvtRD63hwDIPQL+/g/1a5Y7oR6kHDAaMRgwFgYDVQQDDA9HQVRFU1VQIFJP\nT1QgQ0GCFD/EhmgLY0Ta3y/ta89TLpKevAJXMBMGA1UdJQQMMAoGCCsGAQUFBwMB\nMAsGA1UdDwQEAwIFoDARBgNVHREECjAIggZtYXN0ZXIwDQYJKoZIhvcNAQELBQAD\nggEBAGizo/9FWk+W5IpcPwDmw1KeBffHCcu7Qi05M87zRo7ZAXHlT3dQaxZZ2+jO\nAiWDXgUph2CuatKoTHj6sp3trVkAuBtYz96R2O+jeXDG8blLSxhgwIt+NFniLCQn\n5NTK06yBUGl7nvSV6ZFTH2i/ap0wn9q3x/NdtLVcVGWUlsh2iQfUkbnTZnKSiiY5\nyuOGQq7k/f9Lj187DpqS4XtQpByklzF+6KEU0RRhDTGu/V+RhvmqShORK1eQGRGd\nbdUwo/DIYYAxua88o4L4F2hJ2ETrMH1pLM1JRXGd/bfugzhNvVJazk8AHx6y37sM\nc3k3wuwU1F09OfiJuTAg81wmS+M=\n-----END CERTIFICATE-----\n",
-                "key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDsX23LLNwBbrnx\netGSXlStgjFL7WxpKjXSo+bFtvYE1J1ziwn0at1u8an5kRHP7d5MzxRZHwkFGkBx\npGShwx+zMMZ6Pkq5/OkFz8y9fOw3njIY5urE0X+y3vbLxMuhDpIccwWb/kas4MNI\n5gyVJjVmr4TJOkTPsJ0nC+KNEgohlgrlz+OS4EfdWJMBytYMgU8o6DTasMvkcQC1\nAmM3aiwm+pnUMKcvfQQVBOvla+PcENa7RAjJFRU+TCHE7Khakq2dYwcp2d4UxgpF\nIdsrusQnoiFdxr6RzsdCS6zSQWVcSLkbIdXMZL/qx8v2A4ZcxX6jUAlDIh6d+pn+\nKpUJZLDHAgMBAAECggEBAN190qE3aPUCr8SjBOx17j0kKVNvqE2nWwYFxcJxXnlK\nTjwuBmb9GH/UfiU4lgtUZyFsTjHwzf/1CHw0woN+Fx9PTjzQUC+V2Tkz7jOFcsfv\nOhxxjX5enZ2cJoDs6K8Du1BjS9dP3yQx/Ww6/YFpa1LMl84EBuTjJ2+mSGVOiSXL\n6Voua0Bl2y7kiE6+PaJM4QVk7kDXSuUj8O/Qq+TQSTSExd7P5wStgi4VYyG9Crx/\nOohvvg+nZhCXzqbGj5J7b/gA2qnusaebDo/K0ouwJPuanS6SsrjCC2eTQ/GCNaK1\nwqG+GFCp5Fb/zk0ZJMHRh+2xhqkrpAFoRx2xdXVYFxkCgYEA+doPjwGvEWDhsTtV\nKr/P3QsyDpkwXm56oZ6fcdWIPTdnM+V1Xaj4OMacRSAt+ipofE9GAl5X0F/OO5fX\nTJyk3D8Xse1uypwKTiLjRhv9SaW3wQbDmp7GukUfMcI3btv8zQ2P38QTwnjyu9MN\nV2tztFCZs4ZSeW09W6XaV9Wn8jUCgYEA8jB1AniIyPs71ikHZQoGta0M2rVqptgq\n8ihq33N3EO+gOkSQkVgtkOr9GYuCfCPYUlHFOsG1J2N4xUuwS/WTdwlPHpT5qWhl\nzU4UiThudZO4sPb0diC90secwr5GUeg6MQM7q4tOdrxWcZU9HhF0TKEmy3tcv6cV\n6IAa1YVJNosCgYEA0TJUnp+BTuK4deXA7JdH2sNZ+UEob5i/Uv12cSCh/ueZoKk6\nON6WXytkgrhr5q+FZrgVXTxS+GSPT/RVz47EtqiZFWBAyKIYOs4ZT4V18SkxDwyz\n0I2qxSHE+autMEQ/ig0V7vzEsqsESmFvJUgRy+NEnj0UZxkhK9BVXf/FrBUCgYAj\n7WBOP4c7GVnlCS0ZpgUcylEP2L27hnHIfopsH3rYPlPskONJTGVmDBYDxhhTRhX/\nEDZL4xR2hWETE4lRm1qG3BCqnrrykJQZgq21NXPdaU6Koffd1jmSnR36HbPczrBj\nOPGPHxlCr+m668KnRTuVaoqQwPofTDAJz4criZw0xQKBgQDxkCbhU0DlRZaCnirg\nTCCo1peBFhRepGUND5qMzOzUWA4678xkgiqzvpDfwSQZHYGAC6vDLiBhGOTd9RZc\nZrL0MPUXMEE8nCvrFNnBhzN3m4vWhqkMXkYVbdJCKziO3GhoBKGpmrW+aZQJEyjl\ngyY5dKUDfQvdXd3XLQwH3RilWQ==\n-----END PRIVATE KEY-----\n",
-                "cipher": true,
-                "duplicate-cn": true,
-                "logging": true,
-                "status": true,
-                "comment": ""
-            },
-            {
-                "id": "71000000005",
-                "name": "deneme6",
-                "mode": "worker",
-                "interface": "gate106",
-                "local": "0.0.0.0",
-                "bind": "en11",
-                "team": "",
-                "master-ip": "5.5.5.5",
-                "master-protocol": "udp",
-                "master-port": 1111,
-                "backup-ip": "5.5.5.5",
-                "backup-protocol": "tcp",
-                "backup-port": 1212,
-                "core-primary": null,
-                "core-secondary": null,
-                "ca": "",
-                "cert": "",
-                "key": "",
-                "cipher": true,
-                "logging": true,
-                "status": true,
-                "comment": ""
-            },
-            {
-                "id": "71000000006",
-                "name": "deneme122",
-                "mode": "master",
-                "interface": "gate107",
-                "local": "1.1.1.1",
-                "bind": "en8",
-                "team": "",
-                "protocol": "udp",
-                "port": 2222,
-                "core-primary": null,
-                "core-secondary": null,
-                "ca": "",
-                "cert": "",
-                "key": "",
-                "cipher": true,
-                "duplicate-cn": true,
-                "logging": true,
-                "status": true,
-                "comment": ""
-            }
-        ]
-    }
+#!/bin/bash
+# shell account command
+
+# CONFIG FILES
+DEFAULT_NODEMANAGER_CONFIG="/sobe/asger/config/nodemanager/manager.conf"
+DEFAULT_NODEMANAGER_EXT_CONFIG="/sobe/asger/config/nodemanager/50-extensions"
+DEFAULT_CERT_TOMCAT="/sobe/certs/tomcat"
+DEFAULT_ETH0_CONFIG="/etc/sysconfig/network-scripts/ifcfg-eth0"
+DEFAULT_RESOLV_CONFIG="/etc/resolv.conf"
+DEFAULT_DNSMASQ_CONFIG="/etc/dnsmasq.conf"
+DEFAULT_NTPD_CONFIG="/etc/ntp.conf"
+DEFAULT_LDAP_CERT_DIR="/sobe/certs/ldap"
+DEFAULT_ENVIRONMENT_CONFIG="/sobe/asger/shell/environment"
+DEFAULT_POSTGRES_CLIENT_CERT_DIR="/sobe/certs/postgres/client"
+VPASS="honkltTedMYtxwO6"
+
+# check serial number file
+if [ ! -f "/sobe/asger/.serial" ];then
+
+  dmidecode -s system-uuid > /sobe/asger/.serial
+  chmod 444 /sobe/asger/.serial
+  chattr +i  /sobe/asger/.serial
+
+fi
+
+# load environment variables
+source /sobe/asger/shell/environment
+
+# exit in case of error
+set -E
+
+show_role(){
+
+    if [ "${SYSTEM_INSTALL_NODE}" == "nodemanager" ];then
+
+      echo "System Permissions:"
+
+      PGSSLMODE=verify-ca PGSSLROOTCERT=${DEFAULT_POSTGRES_CLIENT_CERT_DIR}/ca.pem PGSSLCERT=${DEFAULT_POSTGRES_CLIENT_CERT_DIR}/postgresql.pem PGSSLKEY=${DEFAULT_POSTGRES_CLIENT_CERT_DIR}/postgresql-600.key PGPASSWORD=$VPASS psql --dbname=nodevault --username=root --port=$SYSTEM_NODE_VAULT_PORT -h $SYSTEM_NODE_VAULT --command="select guacamole_entity.name as account_name,guacamole_system_permission.permission from guacamole_system_permission INNER JOIN guacamole_entity ON guacamole_entity.entity_id=guacamole_system_permission.entity_id where guacamole_entity.type='USER';"|sed 's/CONNECTION/APPLICATION/g'|sed 's/USER/ACCOUNT/g'|sed 's/ADMINISTER/SUPERADMIN/g'|sed 's/CREATE_SHARING_PROFILE/APPCONNECT/g'
+      
+      PGSSLMODE=verify-ca PGSSLROOTCERT=${DEFAULT_POSTGRES_CLIENT_CERT_DIR}/ca.pem PGSSLCERT=${DEFAULT_POSTGRES_CLIENT_CERT_DIR}/postgresql.pem PGSSLKEY=${DEFAULT_POSTGRES_CLIENT_CERT_DIR}/postgresql-600.key PGPASSWORD=$VPASS psql --dbname=nodevault --username=root --port=$SYSTEM_NODE_VAULT_PORT -h $SYSTEM_NODE_VAULT --command="select guacamole_entity.name as account_group_name,guacamole_system_permission.permission from guacamole_system_permission INNER JOIN guacamole_entity ON guacamole_entity.entity_id=guacamole_system_permission.entity_id where guacamole_entity.type='USER_GROUP';"|sed 's/CONNECTION/APPLICATION/g'|sed 's/USER/ACCOUNT/g'|sed 's/ADMINISTER/SUPERADMIN/g'|sed 's/CREATE_SHARING_PROFILE/APPCONNECT/g'
+
+    else
+
+        echo "It is not manager node"
+    fi
+    
+
 }
+
+show_lastlogin(){
+
+    if [ "${SYSTEM_INSTALL_NODE}" == "nodemanager" ];then
+
+        PGSSLMODE=verify-ca PGSSLROOTCERT=${DEFAULT_POSTGRES_CLIENT_CERT_DIR}/ca.pem PGSSLCERT=${DEFAULT_POSTGRES_CLIENT_CERT_DIR}/postgresql.pem PGSSLKEY=${DEFAULT_POSTGRES_CLIENT_CERT_DIR}/postgresql-600.key PGPASSWORD=$VPASS psql --dbname=nodevault --username=root --port=$SYSTEM_NODE_VAULT_PORT -h $SYSTEM_NODE_VAULT --command="select  username as account_name, max(start_date) at time zone '$SYSTEM_TIMEZONE' as last_login from guacamole_user_history group by username order by username;"
+
+    else
+
+        echo "It is not manager node"
+    fi
+    
+
+}
+
+show_membership(){
+
+
+        rm -rf /tmp/account_groups
+        touch /tmp/account_groups
+
+        PGSSLMODE=verify-ca PGSSLROOTCERT=${DEFAULT_POSTGRES_CLIENT_CERT_DIR}/ca.pem PGSSLCERT=${DEFAULT_POSTGRES_CLIENT_CERT_DIR}/postgresql.pem PGSSLKEY=${DEFAULT_POSTGRES_CLIENT_CERT_DIR}/postgresql-600.key PGPASSWORD=$VPASS psql --dbname=nodevault --username=root --port=$SYSTEM_NODE_VAULT_PORT -h $SYSTEM_NODE_VAULT --tuples-only --command="select name from guacamole_entity where type='USER_GROUP';"|xargs -I {} echo {} >>/tmp/account_groups
+
+
+        while read line;
+        do
+
+            echo -e "\n|||Account Group name: $line"
+            echo "Members:"
+
+            entity_id=$(PGSSLMODE=verify-ca PGSSLROOTCERT=${DEFAULT_POSTGRES_CLIENT_CERT_DIR}/ca.pem PGSSLCERT=${DEFAULT_POSTGRES_CLIENT_CERT_DIR}/postgresql.pem PGSSLKEY=${DEFAULT_POSTGRES_CLIENT_CERT_DIR}/postgresql-600.key PGPASSWORD=$VPASS psql --dbname=nodevault --username=root --port=$SYSTEM_NODE_VAULT_PORT -h $SYSTEM_NODE_VAULT --tuples-only --command="select entity_id from guacamole_entity where type='USER_GROUP' and name='$line';")
+
+            user_group_id=$(PGSSLMODE=verify-ca PGSSLROOTCERT=${DEFAULT_POSTGRES_CLIENT_CERT_DIR}/ca.pem PGSSLCERT=${DEFAULT_POSTGRES_CLIENT_CERT_DIR}/postgresql.pem PGSSLKEY=${DEFAULT_POSTGRES_CLIENT_CERT_DIR}/postgresql-600.key PGPASSWORD=$VPASS psql --dbname=nodevault --username=root --port=$SYSTEM_NODE_VAULT_PORT -h $SYSTEM_NODE_VAULT --tuples-only --command="select user_group_id from guacamole_user_group where entity_id=$entity_id;")
+
+            PGSSLMODE=verify-ca PGSSLROOTCERT=${DEFAULT_POSTGRES_CLIENT_CERT_DIR}/ca.pem PGSSLCERT=${DEFAULT_POSTGRES_CLIENT_CERT_DIR}/postgresql.pem PGSSLKEY=${DEFAULT_POSTGRES_CLIENT_CERT_DIR}/postgresql-600.key PGPASSWORD=$VPASS psql --dbname=nodevault --username=root --port=$SYSTEM_NODE_VAULT_PORT -h $SYSTEM_NODE_VAULT --tuples-only --command="select guacamole_entity.name as account_name, guacamole_entity.type  from guacamole_user_group_member inner join guacamole_entity on guacamole_entity.entity_id=guacamole_user_group_member.member_entity_id where guacamole_user_group_member.user_group_id=$user_group_id;"
+
+          
+        done < /tmp/account_groups
+
+}
+
+
+show_superadmin(){
+
+
+      PGSSLMODE=verify-ca PGSSLROOTCERT=${DEFAULT_POSTGRES_CLIENT_CERT_DIR}/ca.pem PGSSLCERT=${DEFAULT_POSTGRES_CLIENT_CERT_DIR}/postgresql.pem PGSSLKEY=${DEFAULT_POSTGRES_CLIENT_CERT_DIR}/postgresql-600.key PGPASSWORD=$VPASS psql --dbname=nodevault --username=root --port=$SYSTEM_NODE_VAULT_PORT -h $SYSTEM_NODE_VAULT --command="select name,type from guacamole_system_permission inner join guacamole_entity on guacamole_entity.entity_id = guacamole_system_permission.entity_id where guacamole_system_permission.permission='ADMINISTER';"|sed 's/CONNECTION/APPLICATION/g'|sed 's/USER/ACCOUNT/g'|sed 's/ADMINISTER/SUPERADMIN/g'|sed 's/CREATE_SHARING_PROFILE/APPCONNECT/g'
+
+}
+
+show_disabled(){
+
+
+      PGSSLMODE=verify-ca PGSSLROOTCERT=${DEFAULT_POSTGRES_CLIENT_CERT_DIR}/ca.pem PGSSLCERT=${DEFAULT_POSTGRES_CLIENT_CERT_DIR}/postgresql.pem PGSSLKEY=${DEFAULT_POSTGRES_CLIENT_CERT_DIR}/postgresql-600.key PGPASSWORD=$VPASS psql --dbname=nodevault --username=root --port=$SYSTEM_NODE_VAULT_PORT -h $SYSTEM_NODE_VAULT --command="select name as account_name,full_name,email_address,organization from guacamole_user inner join guacamole_entity on guacamole_entity.entity_id=guacamole_user.entity_id where disabled=True;"
+
+      PGSSLMODE=verify-ca PGSSLROOTCERT=${DEFAULT_POSTGRES_CLIENT_CERT_DIR}/ca.pem PGSSLCERT=${DEFAULT_POSTGRES_CLIENT_CERT_DIR}/postgresql.pem PGSSLKEY=${DEFAULT_POSTGRES_CLIENT_CERT_DIR}/postgresql-600.key PGPASSWORD=$VPASS psql --dbname=nodevault --username=root --port=$SYSTEM_NODE_VAULT_PORT -h $SYSTEM_NODE_VAULT --command="select name as account_group_name from guacamole_user_group inner join guacamole_entity on guacamole_entity.entity_id=guacamole_user_group.entity_id where disabled=True;"
+
+}
+
+
+show_help(){
+
+echo "
+Usage: account [OPTIONS] COMMAND [ARGS]...
+  Manage accounts.
+Options:
+  -h, --help, help     Show this message and exit.
+Commands:
+  disabled             Display disabled accounts
+  lastlogin            Display account's last login datetime
+  membership           Display group's members
+  role                 Display accounts' roles
+  superadmin           Display superadmin accounts
+
+Usage:
+account < disabled | lastlogin | membership | role | superadmin >
+
+"
+}
+
+
+case $1 in
+
+    disabled) show_disabled;;
+    superadmin) show_superadmin;;
+    role) show_role;;
+    lastlogin) show_lastlogin;;
+    membership) show_membership;;
+    --help) show_help;;
+    -h) show_help;;
+    *) show_help;;
+
+esac
